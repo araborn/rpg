@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" class="templates:surround?with=templates/page.html&amp;at=content">
     <div class="content">
-        <div> !Hello World!</div>
+        <div class="armada:get-factions">
+            <div class="templates:each?from=factions&amp;to=faction">
+                <div class="armada:test_map?type=faction"></div>
+            </div>
+        </div>
+        
     </div>
 </div>

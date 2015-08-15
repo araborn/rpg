@@ -16,6 +16,8 @@ import module namespace app="http://localhost:8080/exist/apps/rpg/templates" at 
 
 import module namespace helpers="http://localhost:8080/exist/apps/rpg/helpers" at "helpers.xqm";
 import module namespace page="http://localhost:8080/exist/apps/rpg/page" at "page.xqm";
+import module namespace armada="http://localhost:8080/exist/apps/rpg/sw_armada" at "sw_armada.xqm";
+
 
 
 

@@ -5,6 +5,7 @@ xquery version "3.0";
  : within a module.
  :)
 module namespace config="http://localhost:8080/exist/apps/rpg/config";
+import module namespace admin="http://192.168.2.103:8080/exist/apps/rpg/admin" at "admin.xqm";
 
 declare namespace templates="http://exist-db.org/xquery/templates";
 
@@ -39,11 +40,7 @@ declare variable $config:repo-descriptor := doc(concat($config:app-root, "/repo.
 
 declare variable $config:expath-descriptor := doc(concat($config:app-root, "/expath-pkg.xml"))/expath:package;
 
-declare variable $config:admin-id := "admin";
-declare variable $config:admin-pass := "knight";
-declare variable $config:signatur-plaintext as xs:string := string(doc($config:data-root || "/mail/mail-signatur-plaintext.xml"));
-declare variable $config:signatur-xhtml := util:eval(util:serialize(doc($config:data-root || "/mail/mail-signatur-xhtml.xml"),()));
-declare variable $config:from := "coerp-info@uni-koeln.de";
+
 
 (:~
  : Resolve the given path using the current application context.
