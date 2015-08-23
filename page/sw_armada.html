@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div xmlns="http://www.w3.org/1999/xhtml" class="templates:surround?with=templates/page.html&amp;at=content">
-    <div class="content">
+    <link class="helpers:app-root" rel="stylesheet" href="resources/css/sw_armada.css"/>
+    <script class="helpers:app-root" type="text/javascript" src="resources/js/sw_armada.js"/>
+    <div class="content armada">
         <div class="armada:get-factions">
             <div class="templates:each?from=factions&amp;to=faction">
-                <div class="armada:test_map?type=faction"></div>
+                <div class="armada:set-faction">
+                    <div class="armada:set-bg-image?source=BGimg&amp;class=flags"/>
+                    
+                    
+                    <div class="armada:collect-armada">
+                        <div class="lists" id="ListShips">
+                            <div class="button" id="Bship">Schiffe</div>
+                            <div class="button2">Close</div>
+                            <div class="templates:each?from=ships&amp;to=ship ships">
+                               <div class="armada:set-ships?type=ship">
+                                   <div >
+                                       <div class="armada:set-armada-image?source=SHimg&amp;class=img_ships"/>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="lists" id="ListSwarms">
+                            <div class="button" id="BSwarms">Schwärme</div>
+                            <div class="button2">Close</div>
+                            <div class="templates:each?from=swarms&amp;to=swarm swarms">
+                                <div class="armada:set-ships?type=swarm">
+                                    <div >
+                                        <div class="armada:set-armada-image?source=SHimg&amp;class=img_swarms"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    <div class="armada:printChoosenShips"/>
+                </div>
+                
+            </div>
+            <div class="CardList">
+            <div class="templates:each?from=CardsAll&amp;to=CardsCat">
+                <div class="armada:SortCards cards">
+                    <div class="templates:each?from=CardsDeck&amp;to=Card SingleCard">
+                        <div class="armada:SortCards2">
+                            <div class="armada:print-data?type=CardName"/>
+                            <div class="armada:set-armada-image?source=CardImg&amp;class=img_card">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
-        
     </div>
 </div>

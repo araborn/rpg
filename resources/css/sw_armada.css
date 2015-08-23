@@ -1,0 +1,124 @@
+
+
+.flags {
+    width:300px;
+    height:300px;
+    margin: auto  0px;
+    position:absolute;
+}
+
+#flag_reb {
+    margin-left:320px;
+}
+
+#flag_imp {
+    
+}
+
+.content.armada {
+    
+}
+
+.ships, .swarms {
+    float:left;
+    display:none;
+    margin:10px;
+}
+
+#BSwarms {
+    margin-left: 280px;
+}
+
+#BShips {
+    
+}
+
+.img_ships{
+    height: 516px;
+    width: 300px;
+}
+
+.img_swarms {
+    height: 418px;
+    width: 300px;
+}
+
+.button {
+    top:320px;
+    position:absolute;
+    width:200px;
+}
+
+.button.active {
+}
+
+.button2 {
+    color:white;
+    display:none;
+}
+.lists {
+    display:none;
+    border: 1px solid;
+    position: absolute;
+    width: 662px;
+    z-index: 1;
+    background-color:black;
+}
+
+.data{
+    display:none;
+}
+
+.ChoosenShips {
+    margin-top: 400px;
+    position: absolute;
+    width: 630px;
+}
+
+.selectedShip {
+    margin: 8px 0 0 2px;
+}
+
+.img_card {
+    width:194px;
+    height:300px;
+}
+
+.cards {
+}
+.SingleCard {
+    float:left;
+}
+
+.CardList {
+    margin-top:340px;
+}
+
+/*######## Designs ##########*/
+
+.button {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
